@@ -1,0 +1,26 @@
+# Local Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local overrides. Commit .env.example, never a real .env.
+.env
+
+# Packaging and editor files
+*.egg-info/
+.idea/
+.vscode/
+
+# Local database files, if a portable PostgreSQL is used beside the repo
+data/
+*.log
+
+# Test reports written by pytest --junitxml
+reports/
+
+# Personal Word notes are kept outside the repository
+*.docx
+~$*

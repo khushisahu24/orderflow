@@ -1,0 +1,12 @@
+# Test and quality tools. Install with: pip install -r requirements-dev.txt
+#
+# pytest     Runs the unit, integration, and end-to-end suites.
+# httpx2     HTTP client that Starlette 1.9's TestClient is built on (in-process API tests).
+# ruff       Linter and formatter.
+# mypy       Static type checker for app/.
+
+-r requirements.txt
+pytest==9.1.1
+httpx2==2.16.0
+ruff==0.17.2
+mypy==2.4.0

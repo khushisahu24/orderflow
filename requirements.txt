@@ -1,0 +1,23 @@
+# Runtime dependencies for the OrderFlow API.
+# Python 3.11. Pins are the current stable releases checked on 2026-10-24.
+#
+# fastapi / uvicorn     HTTP framework and the server process that runs it.
+# email-validator       Lets Pydantic check email fields.
+# pydantic-settings     Reads configuration from environment variables and .env.
+# python-dotenv         Loads .env for scripts/seed.py (also used by pydantic-settings).
+# sqlalchemy            Python layer that builds SQL and manages transactions.
+# psycopg[binary]       PostgreSQL driver used by SQLAlchemy (psycopg 3).
+# alembic               Versioned database schema migrations.
+# pyjwt                 Signs and verifies access tokens.
+# bcrypt                One-way password hashing.
+
+fastapi==0.161.0
+uvicorn[standard]==0.54.0
+email-validator==2.3.0
+pydantic-settings==2.16.1
+python-dotenv==1.2.4
+sqlalchemy==2.1.6
+psycopg[binary]==3.3.6
+alembic==1.20.1
+pyjwt==2.15.1
+bcrypt==5.0.0
